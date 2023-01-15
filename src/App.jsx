@@ -1,14 +1,29 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import './App.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import RoomPage from './pages/RoomPage';
+
+//Router
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />,
+  },
+  {
+    path: '/room/:id',
+    element: <RoomPage />,
+  },
+]);
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div className='App'>
-      <h1>HELLO</h1>
-    </div>
+    <>
+      <Header />
+      <RouterProvider router={router} />
+      <Footer />
+    </>
   );
 }
 
