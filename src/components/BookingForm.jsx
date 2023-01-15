@@ -2,7 +2,7 @@ import React from "react";
 import CheckIn from "./CheckIn";
 import CheckOut from "./CheckOut";
 import AdultsDropdown from "./AdultsDropdown";
-import KidsDropdown from "./AdultsDropdown";
+import KidsDropdown from "./KidsDropdown";
 
 const BookingForm = () => {
   return (

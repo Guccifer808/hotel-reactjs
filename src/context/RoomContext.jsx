@@ -1,6 +1,6 @@
-import React, { useEffect, useState, createContext } from 'react';
+import React, { useEffect, useState, createContext } from "react";
 //mock data
-import { roomData } from '../../mockData';
+import { roomData } from "../../mockData";
 
 //context
 export const RoomContext = createContext();

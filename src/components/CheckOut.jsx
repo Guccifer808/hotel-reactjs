@@ -9,7 +9,7 @@ import { BsCalendarWeek } from "react-icons/bs";
 const CheckOut = () => {
   const [endDate, setEndDate] = useState(false);
   return (
-    <div className="relative flex h-full items-center justify-end">
+    <div className="relative flex h-full items-center justify-end border-b">
       {/* icon */}
       <div className="absolute z-10 pr-8">
         <div>
