@@ -6,11 +6,11 @@ import { Menu } from "@headlessui/react";
 import { FaChevronDown } from "react-icons/fa";
 
 const list = [
-  { amount: "1 Adult" },
-  { amount: "2 Adults" },
-  { amount: "3 Adults" },
-  { amount: "4 Adults" },
-  { amount: "5 Adults" },
+  { amount: "1" },
+  { amount: "2" },
+  { amount: "3" },
+  { amount: "4" },
+  { amount: "5" },
 ];
 
 const AdultsDropdown = () => {
@@ -31,7 +31,7 @@ const AdultsDropdown = () => {
             <Menu.Item
               as="li"
               key={index}
-              className="hover: flex h-12 w-full cursor-pointer items-center justify-center border-b last-of-type:border-b-0 hover:bg-accent"
+              className="flex h-12 w-full cursor-pointer items-center justify-center border-b last-of-type:border-b-0 hover:bg-accent hover:text-white"
             >
               {item.amount}
             </Menu.Item>
