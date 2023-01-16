@@ -6,19 +6,21 @@ import { Menu } from "@headlessui/react";
 import { FaChevronDown } from "react-icons/fa";
 
 const list = [
-  { amount: "1" },
-  { amount: "2" },
-  { amount: "3" },
-  { amount: "4" },
-  { amount: "5" },
+  { amount: "1 Adult" },
+  { amount: "2 Adults" },
+  { amount: "3 Adults" },
+  { amount: "4 Adults" },
+  { amount: "5 Adults" },
 ];
 
 const AdultsDropdown = () => {
+  //
+  const { adults, setAdults } = useContext(RoomContext);
   return (
     <Menu as="div" className="relative h-full w-full border-b bg-white">
       {/* button */}
       <Menu.Button className="flex h-full w-full items-center justify-between px-8">
-        Adults
+        {adults}
         <FaChevronDown size={16} className="text-accent-hover" />
       </Menu.Button>
       {/* items */}
@@ -29,6 +31,7 @@ const AdultsDropdown = () => {
         {list.map((item, index) => {
           return (
             <Menu.Item
+              onClick={() => setAdults(item.amount)}
               as="li"
               key={index}
               className="flex h-12 w-full cursor-pointer items-center justify-center border-b last-of-type:border-b-0 hover:bg-accent hover:text-white"
