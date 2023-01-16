@@ -11,7 +11,7 @@ const BookingForm = () => {
   return (
     <form className="h-[18.75rem] w-full lg:h-[5rem]">
       {/* Main plaque with dropdowns */}
-      <div className="flex h-full w-full flex-col lg:flex-row">
+      <div className="flex h-full w-full flex-col lg:flex-row ">
         <div className="flex-1 border-r">
           <CheckIn />
         </div>
@@ -30,7 +30,7 @@ const BookingForm = () => {
           type="submit"
           onClick={(e) => handleClick(e)}
         >
-          Book Now
+          Find Rooms
         </button>
       </div>
     </form>

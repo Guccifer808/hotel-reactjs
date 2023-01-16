@@ -13,7 +13,7 @@ const Room = ({ room }) => {
         <img
           src={image}
           alt={room.name}
-          className="w-full transition-all duration-500 group-hover:scale-105"
+          className="w-full rounded-md transition-all duration-500 group-hover:scale-105"
         />
       </div>
       {/* small details plaque*/}
