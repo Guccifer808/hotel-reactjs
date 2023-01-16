@@ -20,6 +20,7 @@ const RoomPage = () => {
   const { name, description, facilities, imageLg, price } = room;
   return (
     <section>
+      <ScrollToTop />
       <div className="relative flex h-[560px] items-center justify-center bg-room bg-cover bg-center">
         {/* overlay */}
         <div className="absolute h-full w-full bg-black/25"></div>
