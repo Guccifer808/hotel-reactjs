@@ -34,3 +34,13 @@
     @apply bg-white text-[#0a0a0a];
   }
 }
+/* Scrollbar */
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0.75rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c7c7c7fb;
+  border-radius: 0.75rem;
+}

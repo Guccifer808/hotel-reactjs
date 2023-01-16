@@ -1,7 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const RoomPage = () => {
-  return <div>RoomPage</div>;
+  return <div className="bg-red-200">RoomPage</div>;
 };
 
 export default RoomPage;

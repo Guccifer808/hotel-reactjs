@@ -7,7 +7,7 @@ const Header = () => {
   const [header, setHeader] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      window.scrollY > 100 ? setHeader(true) : setHeader(false);
+      window.scrollY > 75 ? setHeader(true) : setHeader(false);
     });
   });
 
@@ -39,16 +39,13 @@ const Header = () => {
             Rooms
           </a>
           <a href="" className="transition hover:text-accent">
-            SPA
+            Wellness
           </a>
           <a href="" className="transition hover:text-accent">
-            Restaurant
+            Activities
           </a>
           <a href="" className="transition hover:text-accent">
-            Kids Room
-          </a>
-          <a href="" className="transition hover:text-accent">
-            Contact Us
+            Contact
           </a>
         </nav>
       </div>
