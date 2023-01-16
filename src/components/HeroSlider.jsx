@@ -50,7 +50,7 @@ const HeroSlider = () => {
           >
             <div className="z-20 text-center text-white">
               <div className="my-5 py-10 font-additional font-semibold uppercase tracking-[4px]">
-                Houston Hotels & SPA
+                Houston Hotel & SPA
               </div>
               <h1 className="mb-4 max-w-[920px] px-2 font-primary text-[2rem] uppercase leading-tight tracking-wide drop-shadow-2xl lg:text-[48px]">
                 {title}

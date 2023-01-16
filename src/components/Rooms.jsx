@@ -15,6 +15,12 @@ const Rooms = () => {
         </div>
       )}
       <div className="container mx-auto lg:px-0">
+        <div className="text-center">
+          <div className="font-additional text-[1rem] uppercase tracking-[4px]">
+            Houston Hotel & SPA
+          </div>
+          <h2 className="mb-6 font-primary text-[36px]">Room & Suites</h2>
+        </div>
         {/* grid */}
         <div className="mx-auto grid max-w-sm grid-cols-1 gap-7 lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {rooms.map((room, index) => {
