@@ -5,4 +5,4 @@
 - React Router, React Icons, React Date Picker, React Swiper
 - TailwindCSS
 
-[Deployed]()
+[Deployed](https://hotel-reactjs.pages.dev/)
