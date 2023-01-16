@@ -34,7 +34,7 @@ const AdultsDropdown = () => {
               onClick={() => setAdults(item.amount)}
               as="li"
               key={index}
-              className="flex h-12 w-full cursor-pointer items-center justify-center border-b last-of-type:border-b-0 hover:bg-accent hover:text-white"
+              className="flex h-12 w-full cursor-pointer items-center justify-center border-b bg-white p-2 last-of-type:border-b-0 hover:bg-accent hover:text-white"
             >
               {item.amount}
             </Menu.Item>

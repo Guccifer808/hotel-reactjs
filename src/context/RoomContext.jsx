@@ -18,8 +18,14 @@ const RoomProvider = ({ children }) => {
   //
   const handleClick = (e) => {
     e.preventDefault();
-    console.log(total);
+    //filter rooms depending on total person count
+    const newRooms = roomData.filter((room) => {
+      return total <= room.maxPerson;
+    });
+    setRooms(newRooms);
   };
+  // console.log(rooms);
+
   return (
     <RoomContext.Provider
       value={{ rooms, adults, setAdults, kids, setKids, handleClick }}
