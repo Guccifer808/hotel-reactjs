@@ -17,7 +17,7 @@ const Rooms = () => {
       <div className="container mx-auto lg:px-0">
         <div className="text-center">
           <div className="font-additional text-[1rem] uppercase tracking-[4px]">
-            Houston Hotel & SPA
+            Houston TESTTESTTEST Hotel & SPA
           </div>
           <h2 className="mb-6 font-primary text-[36px]">Room & Suites</h2>
         </div>
