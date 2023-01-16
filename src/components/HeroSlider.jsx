@@ -22,7 +22,7 @@ const slides = [
     btnText: "Our Best Offers",
   },
   {
-    title: "Award-Winning Design Suites",
+    title: "Award-Winning International Design Suites",
     bg: Img3,
     btnText: "Our Best Offers",
   },
@@ -33,10 +33,11 @@ const HeroSlider = () => {
     <Swiper
       className="heroSlider h-[600px] lg:h-[860px]"
       modules={[EffectFade, Autoplay]}
-      effect={"fade"}
+      effect="fade"
+      speed={900}
       loop={true}
       autoplay={{
-        delay: 3000,
+        delay: 4000,
         disableOnInteraction: false,
       }}
     >
