@@ -9,7 +9,7 @@ const BookingForm = () => {
   //
   const { handleClick } = useContext(RoomContext);
   return (
-    <form className="h-[18.75rem] w-full lg:h-[5rem]">
+    <form className="h-[18.75rem] w-full lg:h-[5rem]" id="booking-form">
       {/* Main plaque with dropdowns */}
       <div className="flex h-full w-full flex-col lg:flex-row ">
         <div className="flex-1 border-r">

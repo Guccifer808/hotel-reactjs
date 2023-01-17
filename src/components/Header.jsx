@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logoDark from "../assets/img/logo-light.svg";
 import logoLight from "../assets/img/logo-dark.svg";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const Header = () => {
   //
@@ -32,21 +33,36 @@ const Header = () => {
             header ? "text-primary" : "text-white"
           } flex items-center gap-x-4 font-additional uppercase tracking-[1.5px] lg:gap-x-8`}
         >
-          <a href="" className="transition hover:text-accent">
+          <AnchorLink
+            href="#rooms-section"
+            offset={() => 9999}
+            className="transition hover:text-accent"
+          >
             Home
-          </a>
-          <a href="" className="transition hover:text-accent">
+          </AnchorLink>
+
+          <AnchorLink
+            href="#rooms-section"
+            offset={() => 250}
+            className="transition hover:text-accent"
+          >
             Rooms
-          </a>
+          </AnchorLink>
+
           <a href="" className="transition hover:text-accent">
             Wellness
           </a>
           <a href="" className="transition hover:text-accent">
             Activities
           </a>
-          <a href="" className="transition hover:text-accent">
+
+          <AnchorLink
+            href="#contact-section"
+            offset={() => 250}
+            className="transition hover:text-accent"
+          >
             Contact
-          </a>
+          </AnchorLink>
         </nav>
       </div>
     </header>

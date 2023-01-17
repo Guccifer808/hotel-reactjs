@@ -8,6 +8,7 @@ import { EffectFade, Autoplay } from "swiper";
 import Img1 from "../assets/img/heroSlider/1.jpg";
 import Img2 from "../assets/img/heroSlider/2.jpg";
 import Img3 from "../assets/img/heroSlider/3.jpg";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 //Slider content
 const slides = [
@@ -56,9 +57,11 @@ const HeroSlider = () => {
                 {title}
               </h1>
               {/* button */}
-              <button className="btn btn-lg btn-primary mx-auto mt-10">
-                {btnText}
-              </button>
+              <AnchorLink href="#booking-form" offset={() => 150}>
+                <button className="btn btn-lg btn-primary mx-auto mt-10">
+                  {btnText}
+                </button>
+              </AnchorLink>
             </div>
             <div className="absolute top-0 h-full w-full">
               <img

@@ -8,7 +8,10 @@ const Home = () => {
     <>
       <HeroSlider />
       <div className="container relative mx-auto">
-        <div className="mt-4 bg-accent/30 p-4 lg:absolute lg:-top-14 lg:left-0 lg:right-0 lg:z-30 lg:p-0 lg:shadow-xl">
+        <div
+          className="mt-4 bg-accent/30 p-4 lg:absolute lg:-top-14 lg:left-0 lg:right-0 lg:z-30 lg:p-0 lg:shadow-xl"
+          id="things"
+        >
           <BookingForm />
         </div>
       </div>

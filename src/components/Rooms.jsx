@@ -22,7 +22,10 @@ const Rooms = () => {
           <h2 className="mb-6 font-primary text-[36px]">Room & Suites</h2>
         </div>
         {/* grid */}
-        <div className="mx-auto grid max-w-sm grid-cols-1 gap-7 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div
+          className="mx-auto grid max-w-sm grid-cols-1 gap-7 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+          id="rooms-section"
+        >
           {rooms.map((room, index) => {
             return <Room key={room.id} room={room} />;
           })}
